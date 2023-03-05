@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/jsx-one-expression-per-line */
+
 import React, { useState } from 'react';
 import { useSpeechRecognition } from '../../src';
 import { Container } from './shared';
