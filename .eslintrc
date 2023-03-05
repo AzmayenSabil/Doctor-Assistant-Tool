@@ -1,0 +1,47 @@
+{
+  "globals": {
+    "document": true,
+    "window": true
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true,
+      "es6": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["babel", "jest", "react", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "object-curly-newline": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "labelComponents": [],
+        "labelAttributes": [],
+        "controlComponents": [],
+        "assert": "either",
+        "depth": 25
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["examples/src/*", "**/*.spec.js", "**/*.spec.jsx"] }
+    ],
+    "import/no-unresolved": ["error", { "ignore": ["^react$"] }]
+  }
+}

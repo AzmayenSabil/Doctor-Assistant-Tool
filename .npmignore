@@ -1,0 +1,18 @@
+# Logs
+*.log
+
+# Development files
+src
+examples
+
+# Test
+coverage
+test
+
+# Config
+.gitignore
+.babelrc
+webpack.config.js
+.circleci
+jest.setup.js
+.eslintrc
