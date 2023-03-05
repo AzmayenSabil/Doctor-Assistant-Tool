@@ -5,10 +5,9 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { render } from 'react-dom';
-import SpeechSynthesisExample from './useSpeechSynthesis';
-import SpeechRecognitionExample from './useSpeechRecognition';
-import { GlobalStyles, Row, GitLink, Title } from './shared';
-import gh from './images/github.png';
+import SpeechSynthesisExample from './components/useSpeechSynthesis';
+import SpeechRecognitionExample from './components/useSpeechRecognition';
+import { GlobalStyles, Row, GitLink, Title } from '../public/shared';
 
 const App = () => (
   <div>

@@ -2,8 +2,8 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 
 import React, { useState } from 'react';
-import { useSpeechSynthesis } from '../../src';
-import { Container } from './shared';
+import { useSpeechSynthesis } from '../helper';
+import { Container } from '../../public/shared';
 
 const Example = () => {
   const [text, setText] = useState(

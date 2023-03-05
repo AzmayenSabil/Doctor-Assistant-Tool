@@ -1,10 +1,12 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: path.join(__dirname, 'examples/src/index.jsx'),
+  entry: path.join(__dirname, 'src/index.jsx'),
   output: {
-    path: path.join(__dirname, 'examples/dist'),
+    path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   module: {
@@ -36,12 +38,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './examples/src/index.html',
+      template: './public/index.html',
       filename: './index.html',
-      favicon: 'examples/src/images/favicon.ico'
+      favicon: 'public/images/favicon.ico'
     })
   ],
   devServer: {
-    port: 3007
+    port: 3000
   }
 };

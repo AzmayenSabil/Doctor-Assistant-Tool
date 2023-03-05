@@ -2,8 +2,8 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 
 import React, { useState } from 'react';
-import { useSpeechRecognition } from '../../src';
-import { Container } from './shared';
+import { useSpeechRecognition } from '../helper';
+import { Container } from '../../public/shared';
 
 const languageOptions = [
   { label: 'Cambodian', value: 'km-KH' },
